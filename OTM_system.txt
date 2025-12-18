@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+package el-campus{
+    usecase "お知らせ" as f1
+    usecase "アンケート" as f2
+    usecase "課題ダウンロード" as f3
+    usecase "掲示板" as f4
+}
+:user: -->(f1)
+:user: -->(f2)
+:user: -->(f3)
+:user: -->(f4)
+package UNIPASSPORT{
+    usecase "シラバス参照" as g1
+    usecase "履修登録" as g2
+    usecase "成績確認" as g3
+    usecase "時間割" as g4
+}
+
+:user:-->(g1)
+:user:-->(g2)
+:user:-->(g3)
+:user:-->(g4)
+@enduml
