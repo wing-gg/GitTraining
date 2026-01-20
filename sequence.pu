@@ -3,7 +3,7 @@ actor Client
 participant WebApp as "Server"
 participant AuthServer as "DB"
 
-Client-->WebApp:データを要求
+Client->WebApp:データを要求
 WebApp->AuthServer:問い合わせ
 AuthServer-->WebApp:結果
 WebApp-->Client:データ
